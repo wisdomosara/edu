@@ -205,13 +205,13 @@ main{
 }
 .last-item{
     position: relative;
-    width:14%;
+    width:15.5%;
     background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding:10px 20px;
+    padding:15px 20px;
     border-radius: 28px;
 }
 .overlay{
@@ -236,6 +236,65 @@ main{
     opacity: 0;
     box-shadow: 5px 5px 10px rgb(255, 255, 255), -5px -5px 10px rgb(255, 255, 255);
     transition: 0.5s ease-in-out
+}
+.end{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:20% 30px;
+}
+.end-intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 60%;
+}
+.end-intro h1{
+    font-size: 3.5vw
+}
+.end-intro p{
+    width: 70%;
+    font-size: 1vw;
+}
+footer{
+    background-color: #1B1B1C;
+}
+.main-footer-div{
+    display: flex;
+    align-items: baseline;
+    padding:50px 30px;
+    color: white
+}
+ul{
+    margin:0;
+    padding: 0
+}
+.footer-links ul li{
+    float: left;
+    margin-left: 20px;
+    list-style: none;
+    margin-top: 10px;
+    font-size: 14px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    text-decoration: none;
+}
+.footer-icons{
+    margin-left:10vw
+}
+.footer-icons i{
+    margin-left:2vw;
+    color:white;
+    font-size: 1.5vw !important
+}
+.footer-right-wrapper{
+    display: flex;
+    margin-left:30vw;
 }
 @media only screen and (max-width:601px){
     .hero-text h1{
@@ -435,6 +494,72 @@ main{
     .last-item p{
         font-size: 14px
     }
+    .end-intro{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 90%;
+    }
+    .end-intro h1{
+        font-size: 6vw;
+    }
+    .end-intro p{
+        font-size: 12px;
+    }
+    .main-footer-div{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding:50px 30px;
+        color: white
+    }
+    .footer-links ul li{
+        float: left;
+        margin-left: 0 !important;
+        list-style: none;
+        margin-top: 10px;
+        font-size: 12px
+    }
+    .footer-links{
+        width: 100vw;
+        padding:0 !important;
+        margin: 0 0 30px 0 !important;
+    }
+    ul{
+        padding: 0 !important;
+        display: flex;
+        margin:0 !important;
+        justify-content: space-evenly !important;
+        align-items: center !important
+    }
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    a:hover{
+        text-decoration: none;
+    }
+    .footer-icons{
+        width: 100vw;
+        margin-left:0;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .footer-icons i{
+        margin-left:2vw;
+        color:white;
+        font-size: 25px !important
+    }
+    .footer-right-wrapper{
+        display: flex;
+        order: 1;
+        text-align: center;
+        flex-direction: column;
+        margin-left:0 ;
+        justify-content: center !important;
+        align-items: center !important
+    }
 }
 @media only screen and (max-width:1022px){
     @media screen and (min-width:690px){
@@ -495,13 +620,50 @@ main{
         
         }
         .last-section{
-
             justify-content: space-evenly !important;
         }
         .last-item{
-            width:26%;
-            padding:20px 20px;
+            width:25.5%;
+            height: 220px;
+            padding:40px 20px;
             margin-bottom: 90px;
         }
+        .main-wrapper p{
+            color:white;
+            font-size: 12px;
+        }
+        .main-footer-div{
+            display: flex;
+            align-items: baseline;
+            padding:50px 30px;
+            color: white
+        }
+        .footer-links ul li{
+            float: left;
+            margin-left: 20px;
+            list-style: none;
+            margin-top: 2.5vw;
+            font-size: 15px
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+        .footer-icons{
+            margin-top: 1.5vw;
+            margin-left:5vw
+        }
+        .footer-icons i{
+            margin-left:2vw;
+            color:white;
+            font-size: 26px !important
+        }
+        .footer-right-wrapper{
+            display: flex;
+            margin-left:10vw;
+        }    
     }
 }
